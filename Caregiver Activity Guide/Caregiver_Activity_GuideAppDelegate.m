@@ -7,14 +7,18 @@
 //
 
 #import "Caregiver_Activity_GuideAppDelegate.h"
+#import "BenefitsNavController.h"
 
 @implementation Caregiver_Activity_GuideAppDelegate
 
 @synthesize window = _window;
+@synthesize rootController;
+@synthesize benefitsNavController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [_window addSubview:rootController.view];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -61,6 +65,8 @@
 - (void)dealloc
 {
     [_window release];
+    [rootController release];
+    [benefitsNavController release];
     [super dealloc];
 }
 

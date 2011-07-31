@@ -21,6 +21,15 @@
 		B937E61013E5A29C0037462C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B937E60E13E5A29C0037462C /* InfoPlist.strings */; };
 		B937E61213E5A29C0037462C /* Caregiver_Activity_GuideTests.h in Resources */ = {isa = PBXBuildFile; fileRef = B937E61113E5A29C0037462C /* Caregiver_Activity_GuideTests.h */; };
 		B937E61413E5A29C0037462C /* Caregiver_Activity_GuideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B937E61313E5A29C0037462C /* Caregiver_Activity_GuideTests.m */; };
+		B937E61E13E5A5260037462C /* 16-line-chart.png in Resources */ = {isa = PBXBuildFile; fileRef = B937E61D13E5A5260037462C /* 16-line-chart.png */; };
+		B9515FF213E5A84700ECC6FB /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9515FF013E5A84700ECC6FB /* AboutViewController.m */; };
+		B9515FF313E5A84700ECC6FB /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9515FF113E5A84700ECC6FB /* AboutViewController.xib */; };
+		B9515FF713E5A9C800ECC6FB /* BenefitsNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9515FF513E5A9C800ECC6FB /* BenefitsNavController.m */; };
+		B9515FF813E5A9C800ECC6FB /* BenefitsNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9515FF613E5A9C800ECC6FB /* BenefitsNavController.xib */; };
+		B9515FFC13E5AAD000ECC6FB /* BenefitsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9515FFA13E5AAD000ECC6FB /* BenefitsTableViewController.m */; };
+		B9515FFD13E5AAD000ECC6FB /* BenefitsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9515FFB13E5AAD000ECC6FB /* BenefitsTableViewController.xib */; };
+		B951600513E5BA7500ECC6FB /* BenefitDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B951600313E5BA7500ECC6FB /* BenefitDetailViewController.m */; };
+		B951600613E5BA7500ECC6FB /* BenefitDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B951600413E5BA7500ECC6FB /* BenefitDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,19 +47,32 @@
 		B937E5E913E5A29C0037462C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B937E5EB13E5A29C0037462C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B937E5ED13E5A29C0037462C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B937E5F113E5A29C0037462C /* Caregiver Activity Guide-Info.plist */ = {isa = PBXFileReference; path = "Caregiver Activity Guide-Info.plist"; sourceTree = "<group>"; };
+		B937E5F113E5A29C0037462C /* Caregiver Activity Guide-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Caregiver Activity Guide-Info.plist"; sourceTree = "<group>"; };
 		B937E5F313E5A29C0037462C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B937E5F513E5A29C0037462C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B937E5F713E5A29C0037462C /* Caregiver Activity Guide-Prefix.pch */ = {isa = PBXFileReference; path = "Caregiver Activity Guide-Prefix.pch"; sourceTree = "<group>"; };
-		B937E5F813E5A29C0037462C /* Caregiver_Activity_GuideAppDelegate.h */ = {isa = PBXFileReference; path = Caregiver_Activity_GuideAppDelegate.h; sourceTree = "<group>"; };
+		B937E5F713E5A29C0037462C /* Caregiver Activity Guide-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Caregiver Activity Guide-Prefix.pch"; sourceTree = "<group>"; };
+		B937E5F813E5A29C0037462C /* Caregiver_Activity_GuideAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Caregiver_Activity_GuideAppDelegate.h; sourceTree = "<group>"; };
 		B937E5F913E5A29C0037462C /* Caregiver_Activity_GuideAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Caregiver_Activity_GuideAppDelegate.m; sourceTree = "<group>"; };
 		B937E5FC13E5A29C0037462C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		B937E60313E5A29C0037462C /* Caregiver Activity GuideTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Caregiver Activity GuideTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B937E60413E5A29C0037462C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		B937E60D13E5A29C0037462C /* Caregiver Activity GuideTests-Info.plist */ = {isa = PBXFileReference; path = "Caregiver Activity GuideTests-Info.plist"; sourceTree = "<group>"; };
+		B937E60D13E5A29C0037462C /* Caregiver Activity GuideTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Caregiver Activity GuideTests-Info.plist"; sourceTree = "<group>"; };
 		B937E60F13E5A29C0037462C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B937E61113E5A29C0037462C /* Caregiver_Activity_GuideTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Caregiver_Activity_GuideTests.h; sourceTree = "<group>"; };
 		B937E61313E5A29C0037462C /* Caregiver_Activity_GuideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Caregiver_Activity_GuideTests.m; sourceTree = "<group>"; };
+		B937E61D13E5A5260037462C /* 16-line-chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "16-line-chart.png"; path = "../../../iOS/glyphish-icons/icons/16-line-chart.png"; sourceTree = "<group>"; };
+		B9515FEF13E5A84700ECC6FB /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		B9515FF013E5A84700ECC6FB /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		B9515FF113E5A84700ECC6FB /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		B9515FF413E5A9C700ECC6FB /* BenefitsNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BenefitsNavController.h; sourceTree = "<group>"; };
+		B9515FF513E5A9C800ECC6FB /* BenefitsNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BenefitsNavController.m; sourceTree = "<group>"; };
+		B9515FF613E5A9C800ECC6FB /* BenefitsNavController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitsNavController.xib; sourceTree = "<group>"; };
+		B9515FF913E5AAD000ECC6FB /* BenefitsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BenefitsTableViewController.h; sourceTree = "<group>"; };
+		B9515FFA13E5AAD000ECC6FB /* BenefitsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BenefitsTableViewController.m; sourceTree = "<group>"; };
+		B9515FFB13E5AAD000ECC6FB /* BenefitsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitsTableViewController.xib; sourceTree = "<group>"; };
+		B951600213E5BA7500ECC6FB /* BenefitDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BenefitDetailViewController.h; sourceTree = "<group>"; };
+		B951600313E5BA7500ECC6FB /* BenefitDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BenefitDetailViewController.m; sourceTree = "<group>"; };
+		B951600413E5BA7500ECC6FB /* BenefitDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +137,18 @@
 				B937E5F913E5A29C0037462C /* Caregiver_Activity_GuideAppDelegate.m */,
 				B937E5FB13E5A29C0037462C /* MainWindow.xib */,
 				B937E5F013E5A29C0037462C /* Supporting Files */,
+				B9515FEF13E5A84700ECC6FB /* AboutViewController.h */,
+				B9515FF013E5A84700ECC6FB /* AboutViewController.m */,
+				B9515FF113E5A84700ECC6FB /* AboutViewController.xib */,
+				B9515FF413E5A9C700ECC6FB /* BenefitsNavController.h */,
+				B9515FF513E5A9C800ECC6FB /* BenefitsNavController.m */,
+				B9515FF613E5A9C800ECC6FB /* BenefitsNavController.xib */,
+				B9515FF913E5AAD000ECC6FB /* BenefitsTableViewController.h */,
+				B9515FFA13E5AAD000ECC6FB /* BenefitsTableViewController.m */,
+				B9515FFB13E5AAD000ECC6FB /* BenefitsTableViewController.xib */,
+				B951600213E5BA7500ECC6FB /* BenefitDetailViewController.h */,
+				B951600313E5BA7500ECC6FB /* BenefitDetailViewController.m */,
+				B951600413E5BA7500ECC6FB /* BenefitDetailViewController.xib */,
 			);
 			path = "Caregiver Activity Guide";
 			sourceTree = "<group>";
@@ -122,6 +156,7 @@
 		B937E5F013E5A29C0037462C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B937E61D13E5A5260037462C /* 16-line-chart.png */,
 				B937E5F113E5A29C0037462C /* Caregiver Activity Guide-Info.plist */,
 				B937E5F213E5A29C0037462C /* InfoPlist.strings */,
 				B937E5F513E5A29C0037462C /* main.m */,
@@ -221,6 +256,11 @@
 			files = (
 				B937E5F413E5A29C0037462C /* InfoPlist.strings in Resources */,
 				B937E5FD13E5A29C0037462C /* MainWindow.xib in Resources */,
+				B937E61E13E5A5260037462C /* 16-line-chart.png in Resources */,
+				B9515FF313E5A84700ECC6FB /* AboutViewController.xib in Resources */,
+				B9515FF813E5A9C800ECC6FB /* BenefitsNavController.xib in Resources */,
+				B9515FFD13E5AAD000ECC6FB /* BenefitsTableViewController.xib in Resources */,
+				B951600613E5BA7500ECC6FB /* BenefitDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +298,10 @@
 			files = (
 				B937E5F613E5A29C0037462C /* main.m in Sources */,
 				B937E5FA13E5A29C0037462C /* Caregiver_Activity_GuideAppDelegate.m in Sources */,
+				B9515FF213E5A84700ECC6FB /* AboutViewController.m in Sources */,
+				B9515FF713E5A9C800ECC6FB /* BenefitsNavController.m in Sources */,
+				B9515FFC13E5AAD000ECC6FB /* BenefitsTableViewController.m in Sources */,
+				B951600513E5BA7500ECC6FB /* BenefitDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +469,7 @@
 				B937E61913E5A29C0037462C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B937E61A13E5A29C0037462C /* Build configuration list for PBXNativeTarget "Caregiver Activity GuideTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +478,7 @@
 				B937E61C13E5A29C0037462C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

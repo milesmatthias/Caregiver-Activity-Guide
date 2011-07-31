@@ -1,0 +1,21 @@
+//
+//  BenefitsTableViewController.h
+//  Caregiver Activity Guide
+//
+//  Created by Miles Matthias on 7/31/11.
+//  Copyright 2011 UNO/PKI. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@class BenefitDetailViewController;
+
+@interface BenefitsTableViewController : UITableViewController
+<UITableViewDelegate, UITableViewDataSource>{
+    IBOutlet UITableView *benefitsTableView;
+    NSArray *benefitsArray;
+    BenefitDetailViewController *benefitDetailViewController;
+}
+@property (nonatomic, retain) NSArray *benefitsArray;
+@property (nonatomic, retain) BenefitDetailViewController *benefitDetailViewController;
+@end
