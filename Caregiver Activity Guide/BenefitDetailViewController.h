@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BenefitDetailViewController : UIViewController
+@interface BenefitDetailViewController : UIViewController{
+    UITextView *benefitDescriptionTextView;
+}
+@property (nonatomic, retain) IBOutlet UITextView *benefitDescriptionTextView;
 
 @end
