@@ -7,16 +7,30 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+
 @class BenefitsNavController;
 
 @interface Caregiver_Activity_GuideAppDelegate : NSObject <UIApplicationDelegate>{
     IBOutlet UITabBarController *rootController;
     IBOutlet BenefitsNavController *benefitsNavController;
+    
+    @private
+    NSManagedObjectContext *__managedObjectContext;
+    NSManagedObjectModel *__managedObjectModel;
+    NSPersistentStoreCoordinator *__persistentStoreCoordinator;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *rootController;
 @property (nonatomic, retain) IBOutlet BenefitsNavController *benefitsNavController;
+
+@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+- (void)saveContext;
+- (NSURL *)applicationDocumentsDirectory;
 
 @end
 

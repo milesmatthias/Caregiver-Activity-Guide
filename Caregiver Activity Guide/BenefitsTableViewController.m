@@ -9,7 +9,6 @@
 #import "BenefitsTableViewController.h"
 #import "BenefitDetailViewController.h"
 #import "Caregiver_Activity_GuideAppDelegate.h"
-#import "Benefit.h"
 
 @implementation BenefitsTableViewController
 
@@ -40,10 +39,35 @@
 {
     self.title = @"Benefits";
 
-    NSArray *array = [[NSArray alloc] initWithObjects:@"Physical Skills", @"Cognitive Skills",
+    /*NSArray *array = [[NSArray alloc] initWithObjects:@"Physical Skills", @"Cognitive Skills",
                              @"Social Skills", @"Spiritual Health", @"Laughter", @"Reduce Stress",
                              @"Decrease Boredom", @"Increase Creativity", @"Success and Achievement",
-                             @"Control and Choice", nil]; 
+                             @"Control and Choice", nil]; */
+    
+    // Get the objects from Core Data database
+    Caregiver_Activity_GuideAppDelegate *appDelegate =
+	[[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    NSEntityDescription *entityDescription = [NSEntityDescription
+											  entityForName:@"Benefit"
+											  inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+	
+    NSError *error;
+    NSArray *objects = [context executeFetchRequest:request error:&error];
+    if (objects == nil) {
+        NSLog(@"There was an error!");
+        // Do whatever error handling is appropriate
+    }
+
+    // An array to put the names of the benefits into...
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    
+    for (NSManagedObject *oneObject in objects) {
+        [array addObject:[oneObject valueForKey:@"title"]];
+    }
+    [request release];
     
     
     self.benefitsArray = array;
@@ -57,6 +81,8 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    self.benefitsArray = nil;
+    self.benefitDetailViewController = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -116,8 +142,6 @@
     
     // Configure the cell...
     NSUInteger row = [indexPath row];
-    /*Benefit *theBenefit = [self.benefitsArray objectAtIndex:row];
-    cell.textLabel.text = theBenefit.title;*/
     cell.textLabel.text = [self.benefitsArray objectAtIndex:row];
     return cell;
 }
