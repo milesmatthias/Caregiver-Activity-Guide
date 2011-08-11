@@ -126,6 +126,7 @@
     return [self.benefitsArray count];
 }
 
+// TODO: Make this more efficient by actually using the reuseIdentifier
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";

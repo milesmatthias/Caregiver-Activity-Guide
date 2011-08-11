@@ -36,8 +36,7 @@
     // Do any additional setup after loading the view from its nib.
     
     // Get the objects from Core Data database
-    /*Caregiver_Activity_GuideAppDelegate *appDelegate =
-	[[UIApplication sharedApplication] delegate];
+    Caregiver_Activity_GuideAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     NSEntityDescription *entityDescription = [NSEntityDescription
 											  entityForName:@"Definition"
@@ -60,14 +59,7 @@
     }
     
     [objects release];
-    [request release];*/
-    
-    // ** I don't understand why the above doesn't work.
-    // ** I can set breakpoints after this code and it reaches the breakpoint fine, 
-    // ** then gets a "Bad Access" error.
-    // ** But commenting out this code makes it work, so what's the deal??
-   
-    [definitionDescriptionTextView setText:@"This isn't working yet..."];
+    [request release];
     
     [super viewDidLoad];
 }
