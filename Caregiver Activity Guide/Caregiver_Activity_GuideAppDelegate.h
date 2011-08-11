@@ -10,10 +10,12 @@
 #import <CoreData/CoreData.h>
 
 @class BenefitsNavController;
+@class DefinitionsNavController;
 
 @interface Caregiver_Activity_GuideAppDelegate : NSObject <UIApplicationDelegate>{
     IBOutlet UITabBarController *rootController;
     IBOutlet BenefitsNavController *benefitsNavController;
+    IBOutlet DefinitionsNavController *definitionsNavController;
     
     @private
     NSManagedObjectContext *__managedObjectContext;
@@ -24,6 +26,7 @@
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *rootController;
 @property (nonatomic, retain) IBOutlet BenefitsNavController *benefitsNavController;
+@property (nonatomic, retain) IBOutlet DefinitionsNavController *definitionsNavController;
 
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;

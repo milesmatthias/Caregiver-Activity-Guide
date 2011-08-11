@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DefinitionDetailViewController : UIViewController
+@interface DefinitionDetailViewController : UIViewController{
+    UITextView *definitionDescriptionTextView;
+}
+@property (nonatomic, retain) IBOutlet UITextView *definitionDescriptionTextView;
 
 @end

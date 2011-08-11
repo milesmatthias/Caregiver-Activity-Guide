@@ -14,6 +14,7 @@
 @synthesize window = _window;
 @synthesize rootController;
 @synthesize benefitsNavController;
+@synthesize definitionsNavController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -70,6 +71,7 @@
     [__persistentStoreCoordinator release];
     [rootController release];
     [benefitsNavController release];
+    [definitionsNavController release];
     [super dealloc];
 }
 
@@ -140,7 +142,8 @@
         return __persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Caregiver_Activity_Guide.sqlite"];
+    //NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Caregiver_Activity_Guide.sqlite"];
+    NSURL *storeURL = [[NSBundle mainBundle] URLForResource:@"Caregiver_Activity_Guide" withExtension:@"sqlite"];
     
     NSError *error = nil;
     __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];

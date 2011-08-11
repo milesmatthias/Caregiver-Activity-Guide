@@ -1,14 +1,14 @@
 //
-//  AboutViewController.m
+//  FavoritesViewController.m
 //  Caregiver Activity Guide
 //
 //  Created by Miles Matthias on 7/31/11.
 //  Copyright 2011 UNO/PKI. All rights reserved.
 //
 
-#import "AboutViewController.h"
+#import "FavoritesViewController.h"
 
-@implementation AboutViewController
+@implementation FavoritesViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

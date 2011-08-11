@@ -1,5 +1,5 @@
 //
-//  AboutViewController.h
+//  FavoritesViewController.h
 //  Caregiver Activity Guide
 //
 //  Created by Miles Matthias on 7/31/11.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AboutViewController : UIViewController
+@interface FavoritesViewController : UIViewController
 
 @end

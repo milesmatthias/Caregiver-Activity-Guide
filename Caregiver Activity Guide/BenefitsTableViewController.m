@@ -38,11 +38,6 @@
 - (void)viewDidLoad
 {
     self.title = @"Benefits";
-
-    /*NSArray *array = [[NSArray alloc] initWithObjects:@"Physical Skills", @"Cognitive Skills",
-                             @"Social Skills", @"Spiritual Health", @"Laughter", @"Reduce Stress",
-                             @"Decrease Boredom", @"Increase Creativity", @"Success and Achievement",
-                             @"Control and Choice", nil]; */
     
     // Get the objects from Core Data database
     Caregiver_Activity_GuideAppDelegate *appDelegate =

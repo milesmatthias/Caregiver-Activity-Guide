@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DefinitionsTableViewController : UITableViewController
+@class DefinitionDetailViewController;
 
+@interface DefinitionsTableViewController : UITableViewController
+<UITableViewDelegate, UITableViewDataSource>{
+    IBOutlet UITableView *definitionsTableView;
+    NSArray *definitionsArray;
+    DefinitionDetailViewController *definitionDetailViewController;
+}
+@property (nonatomic, retain) NSArray *definitionsArray;
+@property (nonatomic, retain) DefinitionDetailViewController *definitionDetailViewController;
 @end
