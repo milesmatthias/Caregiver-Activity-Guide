@@ -13,6 +13,7 @@
 
 @synthesize window = _window;
 @synthesize rootController;
+@synthesize browseNavController;
 @synthesize benefitsNavController;
 @synthesize definitionsNavController;
 
@@ -70,6 +71,7 @@
     [__managedObjectContext release];
     [__persistentStoreCoordinator release];
     [rootController release];
+    [browseNavController release];
     [benefitsNavController release];
     [definitionsNavController release];
     [super dealloc];

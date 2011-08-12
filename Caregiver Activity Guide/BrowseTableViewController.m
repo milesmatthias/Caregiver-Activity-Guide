@@ -1,19 +1,19 @@
 //
-//  BenefitsTableViewController.m
+//  BrowseTableViewController.m
 //  Caregiver Activity Guide
 //
 //  Created by Miles Matthias on 7/31/11.
 //  Copyright 2011 UNO/PKI. All rights reserved.
 //
 
-#import "BenefitsTableViewController.h"
-#import "BenefitDetailViewController.h"
+#import "BrowseTableViewController.h"
+#import "BrowseDetailViewController.h"
 #import "Caregiver_Activity_GuideAppDelegate.h"
 
-@implementation BenefitsTableViewController
+@implementation BrowseTableViewController
 
-@synthesize benefitsArray;
-@synthesize benefitDetailViewController;
+@synthesize browseArray;
+@synthesize browseDetailViewController;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -37,14 +37,14 @@
 // TODO: Have the table reset when user taps on it's tab
 - (void)viewDidLoad
 {
-    self.title = @"Benefits";
+    self.title = @"Browse";
     
     // Get the objects from Core Data database
-    Caregiver_Activity_GuideAppDelegate *appDelegate =
+    /*Caregiver_Activity_GuideAppDelegate *appDelegate =
 	[[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     NSEntityDescription *entityDescription = [NSEntityDescription
-											  entityForName:@"Benefit"
+											  entityForName:@"Activity"
 											  inManagedObjectContext:context];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDescription];
@@ -62,10 +62,10 @@
     for (NSManagedObject *oneObject in objects) {
         [array addObject:[oneObject valueForKey:@"title"]];
     }
-    [request release];
+    [request release];*/
+    NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"Test1", @"Test2", @"Test3", nil];
     
-    
-    self.benefitsArray = array;
+    self.browseArray = array;
     [array release];
     
     [super viewDidLoad];
@@ -76,8 +76,8 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-    self.benefitsArray = nil;
-    self.benefitDetailViewController = nil;
+    self.browseArray = nil;
+    self.browseDetailViewController = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -107,8 +107,8 @@
 }
 
 - (void) dealloc{
-    [benefitDetailViewController release];
-    [benefitsArray release];
+    [browseDetailViewController release];
+    [browseArray release];
     [super dealloc];
 }
 
@@ -123,7 +123,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.benefitsArray count];
+    return [self.browseArray count];
 }
 
 // TODO: Make this more efficient by actually using the reuseIdentifier
@@ -138,7 +138,7 @@
     
     // Configure the cell...
     NSUInteger row = [indexPath row];
-    cell.textLabel.text = [self.benefitsArray objectAtIndex:row];
+    cell.textLabel.text = [self.browseArray objectAtIndex:row];
     return cell;
 }
 
@@ -148,16 +148,16 @@
 {
     // Navigation logic may go here. Create and push another view controller.
     NSInteger row = [indexPath row];
-    if (self.benefitDetailViewController == nil){
-        BenefitDetailViewController *aBenefitDetail = [[BenefitDetailViewController alloc] initWithNibName:@"BenefitDetailViewController" bundle:nil];
-        self.benefitDetailViewController = aBenefitDetail;
-        [aBenefitDetail release];   
+    if (self.browseDetailViewController == nil){
+        BrowseDetailViewController *aBrowseDetail = [[BrowseDetailViewController alloc] initWithNibName:@"BrowseDetailViewController" bundle:nil];
+        self.browseDetailViewController = aBrowseDetail;
+        [aBrowseDetail release];   
     }
     
-    benefitDetailViewController.title = [NSString stringWithFormat:@"%@", [benefitsArray objectAtIndex:row]];
+    browseDetailViewController.title = [NSString stringWithFormat:@"%@", [browseArray objectAtIndex:row]];
     
      // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:benefitDetailViewController animated:YES];
+     [self.navigationController pushViewController:browseDetailViewController animated:YES];
     
 }
 

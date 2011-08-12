@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
+@class BrowseNavController;
 @class BenefitsNavController;
 @class DefinitionsNavController;
 
 @interface Caregiver_Activity_GuideAppDelegate : NSObject <UIApplicationDelegate>{
     IBOutlet UITabBarController *rootController;
+    IBOutlet BrowseNavController *browseNavController;
     IBOutlet BenefitsNavController *benefitsNavController;
     IBOutlet DefinitionsNavController *definitionsNavController;
     
@@ -25,6 +27,7 @@
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *rootController;
+@property (nonatomic, retain) IBOutlet BrowseNavController *browseNavController;
 @property (nonatomic, retain) IBOutlet BenefitsNavController *benefitsNavController;
 @property (nonatomic, retain) IBOutlet DefinitionsNavController *definitionsNavController;
 

@@ -1,22 +1,21 @@
 //
-//  DefinitionDetailViewController.m
+//  BrowseDetailViewController.m
 //  Caregiver Activity Guide
 //
-//  Created by Miles Matthias on 8/4/11.
+//  Created by Miles Matthias on 7/31/11.
 //  Copyright 2011 UNO/PKI. All rights reserved.
 //
 
-#import "DefinitionDetailViewController.h"
+#import "BrowseDetailViewController.h"
 #import "Caregiver_Activity_GuideAppDelegate.h"
 
-@implementation DefinitionDetailViewController
-@synthesize definitionDescriptionTextView;
+@implementation BrowseDetailViewController
+@synthesize browseDescriptionTextView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -36,10 +35,10 @@
     // Do any additional setup after loading the view from its nib.
     
     // Get the objects from Core Data database
-    Caregiver_Activity_GuideAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    /*Caregiver_Activity_GuideAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     NSEntityDescription *entityDescription = [NSEntityDescription
-											  entityForName:@"Definition"
+											  entityForName:@"Benefit"
 											  inManagedObjectContext:context];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDescription];
@@ -55,14 +54,15 @@
     }
     
     for (NSManagedObject *oneObject in objects) {
-        [definitionDescriptionTextView setText:[oneObject valueForKey:@"desc"]];
+        [benefitDescriptionTextView setText:[oneObject valueForKey:@"desc"]];
     }
     
-    [request release];
+    [objects release];
+    [request release];*/
     
-    //[definitionDescriptionTextView setText:@"desc"];
+    [browseDescriptionTextView setText:@"This is a test!"];
     
-    [super viewDidLoad];
+    [super viewDidLoad];    
 }
 
 - (void)viewDidUnload
@@ -70,7 +70,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-    self.definitionDescriptionTextView = nil;
+    self.browseDescriptionTextView = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -80,7 +80,7 @@
 }
 
 - (void)dealloc{
-    [definitionDescriptionTextView release];
+    [browseDescriptionTextView release];
     [super dealloc];
 }
 

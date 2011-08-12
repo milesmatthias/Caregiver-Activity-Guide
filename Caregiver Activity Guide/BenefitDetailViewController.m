@@ -57,7 +57,6 @@
         [benefitDescriptionTextView setText:[oneObject valueForKey:@"desc"]];
     }
     
-    [objects release];
     [request release];
     
     //[benefitDescriptionTextView setText:@"This is a test!"];

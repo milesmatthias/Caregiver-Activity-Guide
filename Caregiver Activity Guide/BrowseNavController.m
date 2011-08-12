@@ -1,14 +1,14 @@
 //
-//  BenefitsNavController.m
+//  BrowseNavController.m
 //  Caregiver Activity Guide
 //
 //  Created by Miles Matthias on 7/31/11.
 //  Copyright 2011 UNO/PKI. All rights reserved.
 //
 
-#import "BenefitsNavController.h"
+#import "BrowseNavController.h"
 
-@implementation BenefitsNavController
+@implementation BrowseNavController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

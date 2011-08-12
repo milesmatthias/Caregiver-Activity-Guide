@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B909E87A13F4A2AA006F0698 /* BrowseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B909E87213F4A2AA006F0698 /* BrowseDetailViewController.m */; };
+		B909E87B13F4A2AA006F0698 /* BrowseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B909E87313F4A2AA006F0698 /* BrowseDetailViewController.xib */; };
+		B909E87C13F4A2AA006F0698 /* BrowseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = B909E87513F4A2AA006F0698 /* BrowseNavController.m */; };
+		B909E87D13F4A2AA006F0698 /* BrowseNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B909E87613F4A2AA006F0698 /* BrowseNavController.xib */; };
+		B909E87E13F4A2AA006F0698 /* BrowseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B909E87813F4A2AA006F0698 /* BrowseTableViewController.m */; };
+		B909E87F13F4A2AA006F0698 /* BrowseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B909E87913F4A2AA006F0698 /* BrowseTableViewController.xib */; };
 		B91B096613E6628100FA2EEF /* BenefitsNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91B096413E6628100FA2EEF /* BenefitsNavController.m */; };
 		B91B096713E6628100FA2EEF /* BenefitsNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91B096513E6628100FA2EEF /* BenefitsNavController.xib */; };
 		B937E5EA13E5A29C0037462C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B937E5E913E5A29C0037462C /* UIKit.framework */; };
@@ -52,6 +58,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B909E87113F4A2AA006F0698 /* BrowseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseDetailViewController.h; sourceTree = "<group>"; };
+		B909E87213F4A2AA006F0698 /* BrowseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseDetailViewController.m; sourceTree = "<group>"; };
+		B909E87313F4A2AA006F0698 /* BrowseDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowseDetailViewController.xib; sourceTree = "<group>"; };
+		B909E87413F4A2AA006F0698 /* BrowseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseNavController.h; sourceTree = "<group>"; };
+		B909E87513F4A2AA006F0698 /* BrowseNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseNavController.m; sourceTree = "<group>"; };
+		B909E87613F4A2AA006F0698 /* BrowseNavController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowseNavController.xib; sourceTree = "<group>"; };
+		B909E87713F4A2AA006F0698 /* BrowseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseTableViewController.h; sourceTree = "<group>"; };
+		B909E87813F4A2AA006F0698 /* BrowseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseTableViewController.m; sourceTree = "<group>"; };
+		B909E87913F4A2AA006F0698 /* BrowseTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowseTableViewController.xib; sourceTree = "<group>"; };
 		B91B096313E6628100FA2EEF /* BenefitsNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BenefitsNavController.h; sourceTree = "<group>"; };
 		B91B096413E6628100FA2EEF /* BenefitsNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BenefitsNavController.m; sourceTree = "<group>"; };
 		B91B096513E6628100FA2EEF /* BenefitsNavController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitsNavController.xib; sourceTree = "<group>"; };
@@ -122,6 +137,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B909E87013F4A135006F0698 /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				B909E87413F4A2AA006F0698 /* BrowseNavController.h */,
+				B909E87513F4A2AA006F0698 /* BrowseNavController.m */,
+				B909E87613F4A2AA006F0698 /* BrowseNavController.xib */,
+				B909E87713F4A2AA006F0698 /* BrowseTableViewController.h */,
+				B909E87813F4A2AA006F0698 /* BrowseTableViewController.m */,
+				B909E87913F4A2AA006F0698 /* BrowseTableViewController.xib */,
+				B909E87113F4A2AA006F0698 /* BrowseDetailViewController.h */,
+				B909E87213F4A2AA006F0698 /* BrowseDetailViewController.m */,
+				B909E87313F4A2AA006F0698 /* BrowseDetailViewController.xib */,
+			);
+			name = Browse;
+			sourceTree = "<group>";
+		};
 		B91B095713E63B0600FA2EEF /* Benefits */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +208,7 @@
 				B9AFC75E13E7B1AB003C56B4 /* Caregiver_Activity_Guide_Model.xcdatamodeld */,
 				B937E5FB13E5A29C0037462C /* MainWindow.xib */,
 				B937E5F013E5A29C0037462C /* Supporting Files */,
+				B909E87013F4A135006F0698 /* Browse */,
 				B91B095713E63B0600FA2EEF /* Benefits */,
 				B9E13A2E13EB6B2F006C8B0C /* Definitions */,
 				B9E13A2D13EB6B20006C8B0C /* Favorites */,
@@ -324,6 +356,9 @@
 				B9E13A4213EB6C83006C8B0C /* DefinitionsTableViewController.xib in Resources */,
 				B9E13A4713EB6FC1006C8B0C /* DefinitionDetailViewController.xib in Resources */,
 				B93CF25B13F48F3D004227FA /* Caregiver_Activity_Guide.sqlite in Resources */,
+				B909E87B13F4A2AA006F0698 /* BrowseDetailViewController.xib in Resources */,
+				B909E87D13F4A2AA006F0698 /* BrowseNavController.xib in Resources */,
+				B909E87F13F4A2AA006F0698 /* BrowseTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +404,9 @@
 				B9E13A3C13EB6C5E006C8B0C /* DefinitionsNavController.m in Sources */,
 				B9E13A4113EB6C83006C8B0C /* DefinitionsTableViewController.m in Sources */,
 				B9E13A4613EB6FC1006C8B0C /* DefinitionDetailViewController.m in Sources */,
+				B909E87A13F4A2AA006F0698 /* BrowseDetailViewController.m in Sources */,
+				B909E87C13F4A2AA006F0698 /* BrowseNavController.m in Sources */,
+				B909E87E13F4A2AA006F0698 /* BrowseTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
