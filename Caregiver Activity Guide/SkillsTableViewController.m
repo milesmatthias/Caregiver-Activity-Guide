@@ -1,19 +1,19 @@
 //
-//  DefinitionsTableViewController.m
+//  SkillsTableViewController.m
 //  Caregiver Activity Guide
 //
 //  Created by Miles Matthias on 8/4/11.
 //  Copyright 2011 UNO/PKI. All rights reserved.
 //
 
-#import "DefinitionsTableViewController.h"
-#import "DefinitionDetailViewController.h"
+#import "SkillsTableViewController.h"
+#import "SkillDetailViewController.h"
 #import "Caregiver_Activity_GuideAppDelegate.h"
 
-@implementation DefinitionsTableViewController
+@implementation SkillsTableViewController
 
-@synthesize definitionDetailViewController;
-@synthesize definitionsArray;
+@synthesize skillDetailViewController;
+@synthesize skillsArray;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -36,7 +36,7 @@
 
 - (void)viewDidLoad
 {
-    self.title = @"Definitions";
+    self.title = @"Skills";
     
     // Get the objects from Core Data database
     Caregiver_Activity_GuideAppDelegate *appDelegate =
@@ -68,7 +68,7 @@
      @"Decrease Boredom", @"Increase Creativity", @"Success and Achievement",
      @"Control and Choice", nil];*/
     
-    self.definitionsArray = array;
+    self.skillsArray = array;
     [array release];
     
     [super viewDidLoad];
@@ -79,8 +79,8 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-    self.definitionsArray = nil;
-    self.definitionDetailViewController = nil;
+    self.skillsArray = nil;
+    self.skillDetailViewController = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -110,8 +110,8 @@
 }
 
 - (void)dealloc{
-    [definitionsArray release];
-    [definitionDetailViewController release];
+    [skillsArray release];
+    [skillDetailViewController release];
     [super dealloc];
 }
 
@@ -126,7 +126,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.definitionsArray count];
+    return [self.skillsArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -140,7 +140,7 @@
     
     // Configure the cell...
     NSUInteger row = [indexPath row];
-    cell.textLabel.text = [self.definitionsArray objectAtIndex:row];
+    cell.textLabel.text = [self.skillsArray objectAtIndex:row];
     return cell;
 }
 
@@ -150,16 +150,16 @@
 {
     // Navigation logic may go here. Create and push another view controller.
     NSInteger row = [indexPath row];
-    if (self.definitionDetailViewController == nil){
-        DefinitionDetailViewController *aDefinitionDetail = [[DefinitionDetailViewController alloc] initWithNibName:@"DefinitionDetailViewController" bundle:nil];
-        self.definitionDetailViewController = aDefinitionDetail;
-        [aDefinitionDetail release];   
+    if (self.skillDetailViewController == nil){
+        SkillDetailViewController *aSkillDetail = [[SkillDetailViewController alloc] initWithNibName:@"SkillDetailViewController" bundle:nil];
+        self.skillDetailViewController = aSkillDetail;
+        [aSkillDetail release];   
     }
     
-    definitionDetailViewController.title = [NSString stringWithFormat:@"%@", [definitionsArray objectAtIndex:row]];
+    skillDetailViewController.title = [NSString stringWithFormat:@"%@", [skillsArray objectAtIndex:row]];
     
     // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:definitionDetailViewController animated:YES];
+    [self.navigationController pushViewController:skillDetailViewController animated:YES];
     
 }
 

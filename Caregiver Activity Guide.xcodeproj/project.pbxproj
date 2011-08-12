@@ -38,13 +38,13 @@
 		B9515FFD13E5AAD000ECC6FB /* BenefitsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9515FFB13E5AAD000ECC6FB /* BenefitsTableViewController.xib */; };
 		B951600513E5BA7500ECC6FB /* BenefitDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B951600313E5BA7500ECC6FB /* BenefitDetailViewController.m */; };
 		B951600613E5BA7500ECC6FB /* BenefitDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B951600413E5BA7500ECC6FB /* BenefitDetailViewController.xib */; };
-		B9AFC76013E7B1AB003C56B4 /* Caregiver_Activity_Guide_Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9AFC75E13E7B1AB003C56B4 /* Caregiver_Activity_Guide_Model.xcdatamodeld */; };
-		B9E13A3C13EB6C5E006C8B0C /* DefinitionsNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E13A3A13EB6C5E006C8B0C /* DefinitionsNavController.m */; };
-		B9E13A3D13EB6C5E006C8B0C /* DefinitionsNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9E13A3B13EB6C5E006C8B0C /* DefinitionsNavController.xib */; };
-		B9E13A4113EB6C83006C8B0C /* DefinitionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E13A3F13EB6C83006C8B0C /* DefinitionsTableViewController.m */; };
-		B9E13A4213EB6C83006C8B0C /* DefinitionsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9E13A4013EB6C83006C8B0C /* DefinitionsTableViewController.xib */; };
-		B9E13A4613EB6FC1006C8B0C /* DefinitionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E13A4413EB6FC1006C8B0C /* DefinitionDetailViewController.m */; };
-		B9E13A4713EB6FC1006C8B0C /* DefinitionDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9E13A4513EB6FC1006C8B0C /* DefinitionDetailViewController.xib */; };
+		B9E13A3C13EB6C5E006C8B0C /* SkillsNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E13A3A13EB6C5E006C8B0C /* SkillsNavController.m */; };
+		B9E13A3D13EB6C5E006C8B0C /* SkillsNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9E13A3B13EB6C5E006C8B0C /* SkillsNavController.xib */; };
+		B9E13A4113EB6C83006C8B0C /* SkillsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E13A3F13EB6C83006C8B0C /* SkillsTableViewController.m */; };
+		B9E13A4213EB6C83006C8B0C /* SkillsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9E13A4013EB6C83006C8B0C /* SkillsTableViewController.xib */; };
+		B9E13A4613EB6FC1006C8B0C /* SkillDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E13A4413EB6FC1006C8B0C /* SkillDetailViewController.m */; };
+		B9E13A4713EB6FC1006C8B0C /* SkillDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9E13A4513EB6FC1006C8B0C /* SkillDetailViewController.xib */; };
+		B9F6C7FE13F4C925007A9AAE /* Caregiver_Activity_Guide_Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9F6C7FC13F4C925007A9AAE /* Caregiver_Activity_Guide_Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,16 +99,16 @@
 		B951600213E5BA7500ECC6FB /* BenefitDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BenefitDetailViewController.h; sourceTree = "<group>"; };
 		B951600313E5BA7500ECC6FB /* BenefitDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BenefitDetailViewController.m; sourceTree = "<group>"; };
 		B951600413E5BA7500ECC6FB /* BenefitDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitDetailViewController.xib; sourceTree = "<group>"; };
-		B9AFC75F13E7B1AB003C56B4 /* Caregiver_Activity_Guide_Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Caregiver_Activity_Guide_Model.xcdatamodel; sourceTree = "<group>"; };
-		B9E13A3913EB6C5E006C8B0C /* DefinitionsNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefinitionsNavController.h; sourceTree = "<group>"; };
-		B9E13A3A13EB6C5E006C8B0C /* DefinitionsNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefinitionsNavController.m; sourceTree = "<group>"; };
-		B9E13A3B13EB6C5E006C8B0C /* DefinitionsNavController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefinitionsNavController.xib; sourceTree = "<group>"; };
-		B9E13A3E13EB6C83006C8B0C /* DefinitionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefinitionsTableViewController.h; sourceTree = "<group>"; };
-		B9E13A3F13EB6C83006C8B0C /* DefinitionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefinitionsTableViewController.m; sourceTree = "<group>"; };
-		B9E13A4013EB6C83006C8B0C /* DefinitionsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefinitionsTableViewController.xib; sourceTree = "<group>"; };
-		B9E13A4313EB6FC0006C8B0C /* DefinitionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefinitionDetailViewController.h; sourceTree = "<group>"; };
-		B9E13A4413EB6FC1006C8B0C /* DefinitionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefinitionDetailViewController.m; sourceTree = "<group>"; };
-		B9E13A4513EB6FC1006C8B0C /* DefinitionDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefinitionDetailViewController.xib; sourceTree = "<group>"; };
+		B9E13A3913EB6C5E006C8B0C /* SkillsNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsNavController.h; sourceTree = "<group>"; };
+		B9E13A3A13EB6C5E006C8B0C /* SkillsNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsNavController.m; sourceTree = "<group>"; };
+		B9E13A3B13EB6C5E006C8B0C /* SkillsNavController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillsNavController.xib; sourceTree = "<group>"; };
+		B9E13A3E13EB6C83006C8B0C /* SkillsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsTableViewController.h; sourceTree = "<group>"; };
+		B9E13A3F13EB6C83006C8B0C /* SkillsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsTableViewController.m; sourceTree = "<group>"; };
+		B9E13A4013EB6C83006C8B0C /* SkillsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillsTableViewController.xib; sourceTree = "<group>"; };
+		B9E13A4313EB6FC0006C8B0C /* SkillDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillDetailViewController.h; sourceTree = "<group>"; };
+		B9E13A4413EB6FC1006C8B0C /* SkillDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillDetailViewController.m; sourceTree = "<group>"; };
+		B9E13A4513EB6FC1006C8B0C /* SkillDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillDetailViewController.xib; sourceTree = "<group>"; };
+		B9F6C7FD13F4C925007A9AAE /* Caregiver_Activity_Guide_Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Caregiver_Activity_Guide_Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,12 +205,12 @@
 			children = (
 				B937E5F813E5A29C0037462C /* Caregiver_Activity_GuideAppDelegate.h */,
 				B937E5F913E5A29C0037462C /* Caregiver_Activity_GuideAppDelegate.m */,
-				B9AFC75E13E7B1AB003C56B4 /* Caregiver_Activity_Guide_Model.xcdatamodeld */,
 				B937E5FB13E5A29C0037462C /* MainWindow.xib */,
+				B9F6C7FC13F4C925007A9AAE /* Caregiver_Activity_Guide_Model.xcdatamodeld */,
 				B937E5F013E5A29C0037462C /* Supporting Files */,
 				B909E87013F4A135006F0698 /* Browse */,
 				B91B095713E63B0600FA2EEF /* Benefits */,
-				B9E13A2E13EB6B2F006C8B0C /* Definitions */,
+				B9E13A2E13EB6B2F006C8B0C /* Skills */,
 				B9E13A2D13EB6B20006C8B0C /* Favorites */,
 			);
 			path = "Caregiver Activity Guide";
@@ -258,20 +258,20 @@
 			name = Favorites;
 			sourceTree = "<group>";
 		};
-		B9E13A2E13EB6B2F006C8B0C /* Definitions */ = {
+		B9E13A2E13EB6B2F006C8B0C /* Skills */ = {
 			isa = PBXGroup;
 			children = (
-				B9E13A3913EB6C5E006C8B0C /* DefinitionsNavController.h */,
-				B9E13A3A13EB6C5E006C8B0C /* DefinitionsNavController.m */,
-				B9E13A3B13EB6C5E006C8B0C /* DefinitionsNavController.xib */,
-				B9E13A3E13EB6C83006C8B0C /* DefinitionsTableViewController.h */,
-				B9E13A3F13EB6C83006C8B0C /* DefinitionsTableViewController.m */,
-				B9E13A4013EB6C83006C8B0C /* DefinitionsTableViewController.xib */,
-				B9E13A4313EB6FC0006C8B0C /* DefinitionDetailViewController.h */,
-				B9E13A4413EB6FC1006C8B0C /* DefinitionDetailViewController.m */,
-				B9E13A4513EB6FC1006C8B0C /* DefinitionDetailViewController.xib */,
+				B9E13A3913EB6C5E006C8B0C /* SkillsNavController.h */,
+				B9E13A3A13EB6C5E006C8B0C /* SkillsNavController.m */,
+				B9E13A3B13EB6C5E006C8B0C /* SkillsNavController.xib */,
+				B9E13A3E13EB6C83006C8B0C /* SkillsTableViewController.h */,
+				B9E13A3F13EB6C83006C8B0C /* SkillsTableViewController.m */,
+				B9E13A4013EB6C83006C8B0C /* SkillsTableViewController.xib */,
+				B9E13A4313EB6FC0006C8B0C /* SkillDetailViewController.h */,
+				B9E13A4413EB6FC1006C8B0C /* SkillDetailViewController.m */,
+				B9E13A4513EB6FC1006C8B0C /* SkillDetailViewController.xib */,
 			);
-			name = Definitions;
+			name = Skills;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,9 +352,9 @@
 				B9515FFD13E5AAD000ECC6FB /* BenefitsTableViewController.xib in Resources */,
 				B951600613E5BA7500ECC6FB /* BenefitDetailViewController.xib in Resources */,
 				B91B096713E6628100FA2EEF /* BenefitsNavController.xib in Resources */,
-				B9E13A3D13EB6C5E006C8B0C /* DefinitionsNavController.xib in Resources */,
-				B9E13A4213EB6C83006C8B0C /* DefinitionsTableViewController.xib in Resources */,
-				B9E13A4713EB6FC1006C8B0C /* DefinitionDetailViewController.xib in Resources */,
+				B9E13A3D13EB6C5E006C8B0C /* SkillsNavController.xib in Resources */,
+				B9E13A4213EB6C83006C8B0C /* SkillsTableViewController.xib in Resources */,
+				B9E13A4713EB6FC1006C8B0C /* SkillDetailViewController.xib in Resources */,
 				B93CF25B13F48F3D004227FA /* Caregiver_Activity_Guide.sqlite in Resources */,
 				B909E87B13F4A2AA006F0698 /* BrowseDetailViewController.xib in Resources */,
 				B909E87D13F4A2AA006F0698 /* BrowseNavController.xib in Resources */,
@@ -400,13 +400,13 @@
 				B9515FFC13E5AAD000ECC6FB /* BenefitsTableViewController.m in Sources */,
 				B951600513E5BA7500ECC6FB /* BenefitDetailViewController.m in Sources */,
 				B91B096613E6628100FA2EEF /* BenefitsNavController.m in Sources */,
-				B9AFC76013E7B1AB003C56B4 /* Caregiver_Activity_Guide_Model.xcdatamodeld in Sources */,
-				B9E13A3C13EB6C5E006C8B0C /* DefinitionsNavController.m in Sources */,
-				B9E13A4113EB6C83006C8B0C /* DefinitionsTableViewController.m in Sources */,
-				B9E13A4613EB6FC1006C8B0C /* DefinitionDetailViewController.m in Sources */,
+				B9E13A3C13EB6C5E006C8B0C /* SkillsNavController.m in Sources */,
+				B9E13A4113EB6C83006C8B0C /* SkillsTableViewController.m in Sources */,
+				B9E13A4613EB6FC1006C8B0C /* SkillDetailViewController.m in Sources */,
 				B909E87A13F4A2AA006F0698 /* BrowseDetailViewController.m in Sources */,
 				B909E87C13F4A2AA006F0698 /* BrowseNavController.m in Sources */,
 				B909E87E13F4A2AA006F0698 /* BrowseTableViewController.m in Sources */,
+				B9F6C7FE13F4C925007A9AAE /* Caregiver_Activity_Guide_Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,12 +588,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B9AFC75E13E7B1AB003C56B4 /* Caregiver_Activity_Guide_Model.xcdatamodeld */ = {
+		B9F6C7FC13F4C925007A9AAE /* Caregiver_Activity_Guide_Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B9AFC75F13E7B1AB003C56B4 /* Caregiver_Activity_Guide_Model.xcdatamodel */,
+				B9F6C7FD13F4C925007A9AAE /* Caregiver_Activity_Guide_Model.xcdatamodel */,
 			);
-			currentVersion = B9AFC75F13E7B1AB003C56B4 /* Caregiver_Activity_Guide_Model.xcdatamodel */;
+			currentVersion = B9F6C7FD13F4C925007A9AAE /* Caregiver_Activity_Guide_Model.xcdatamodel */;
 			path = Caregiver_Activity_Guide_Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

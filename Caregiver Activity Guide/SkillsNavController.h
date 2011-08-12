@@ -1,5 +1,5 @@
 //
-//  DefinitionsNavController.h
+//  SkillsNavController.h
 //  Caregiver Activity Guide
 //
 //  Created by Miles Matthias on 8/4/11.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DefinitionsNavController : UINavigationController
+@interface SkillsNavController : UINavigationController
 
 @end

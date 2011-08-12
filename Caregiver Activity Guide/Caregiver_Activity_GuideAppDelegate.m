@@ -15,7 +15,7 @@
 @synthesize rootController;
 @synthesize browseNavController;
 @synthesize benefitsNavController;
-@synthesize definitionsNavController;
+@synthesize skillsNavController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -73,7 +73,7 @@
     [rootController release];
     [browseNavController release];
     [benefitsNavController release];
-    [definitionsNavController release];
+    [skillsNavController release];
     [super dealloc];
 }
 
@@ -128,8 +128,9 @@
     {
         return __managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Caregiver_Activity_Guide_Model" withExtension:@"momd"];
-    __managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Caregiver_Activity_Guide_Model" ofType:@"momd"];
+    NSURL *momURL = [NSURL fileURLWithPath:path];
+    __managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:momURL];    
     return __managedObjectModel;
 }
 

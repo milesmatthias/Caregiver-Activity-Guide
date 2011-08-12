@@ -1,16 +1,16 @@
 //
-//  DefinitionDetailViewController.m
+//  SkillDetailViewController.m
 //  Caregiver Activity Guide
 //
 //  Created by Miles Matthias on 8/4/11.
 //  Copyright 2011 UNO/PKI. All rights reserved.
 //
 
-#import "DefinitionDetailViewController.h"
+#import "SkillDetailViewController.h"
 #import "Caregiver_Activity_GuideAppDelegate.h"
 
-@implementation DefinitionDetailViewController
-@synthesize definitionDescriptionTextView;
+@implementation SkillDetailViewController
+@synthesize skillDescriptionTextView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -55,12 +55,12 @@
     }
     
     for (NSManagedObject *oneObject in objects) {
-        [definitionDescriptionTextView setText:[oneObject valueForKey:@"desc"]];
+        [skillDescriptionTextView setText:[oneObject valueForKey:@"desc"]];
     }
     
     [request release];
     
-    //[definitionDescriptionTextView setText:@"desc"];
+    //[skillDescriptionTextView setText:@"desc"];
     
     [super viewDidLoad];
 }
@@ -70,7 +70,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-    self.definitionDescriptionTextView = nil;
+    self.skillDescriptionTextView = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -80,7 +80,7 @@
 }
 
 - (void)dealloc{
-    [definitionDescriptionTextView release];
+    [skillDescriptionTextView release];
     [super dealloc];
 }
 
