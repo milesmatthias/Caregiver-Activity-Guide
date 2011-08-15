@@ -59,15 +59,10 @@
     NSMutableArray *array = [[NSMutableArray alloc] init];
     
     for (NSManagedObject *oneObject in objects) {
-        [array addObject:[oneObject valueForKey:@"title"]];
+        [array addObject:oneObject];
     }
     [request release];
-    
-    /*NSArray *array = [[NSArray alloc] initWithObjects:@"Physical Skills", @"Cognitive Skills",
-     @"Social Skills", @"Spiritual Health", @"Laughter", @"Reduce Stress",
-     @"Decrease Boredom", @"Increase Creativity", @"Success and Achievement",
-     @"Control and Choice", nil];*/
-    
+
     self.skillsArray = array;
     [array release];
     
@@ -140,7 +135,7 @@
     
     // Configure the cell...
     NSUInteger row = [indexPath row];
-    cell.textLabel.text = [self.skillsArray objectAtIndex:row];
+    cell.textLabel.text = [[self.skillsArray objectAtIndex:row] valueForKey:@"title"];
     return cell;
 }
 
@@ -155,10 +150,9 @@
         self.skillDetailViewController = aSkillDetail;
         [aSkillDetail release];   
     }
-    
-    skillDetailViewController.title = [NSString stringWithFormat:@"%@", [skillsArray objectAtIndex:row]];
-    
     // Pass the selected object to the new view controller.
+    skillDetailViewController.skill = [skillsArray objectAtIndex:row];
+    
     [self.navigationController pushViewController:skillDetailViewController animated:YES];
     
 }

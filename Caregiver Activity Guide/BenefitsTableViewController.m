@@ -60,7 +60,7 @@
     NSMutableArray *array = [[NSMutableArray alloc] init];
     
     for (NSManagedObject *oneObject in objects) {
-        [array addObject:[oneObject valueForKey:@"title"]];
+        [array addObject:oneObject];
     }
     [request release];
     
@@ -138,7 +138,7 @@
     
     // Configure the cell...
     NSUInteger row = [indexPath row];
-    cell.textLabel.text = [self.benefitsArray objectAtIndex:row];
+    cell.textLabel.text = [[self.benefitsArray objectAtIndex:row] valueForKey:@"title"];
     return cell;
 }
 
@@ -154,10 +154,10 @@
         [aBenefitDetail release];   
     }
     
-    benefitDetailViewController.title = [NSString stringWithFormat:@"%@", [benefitsArray objectAtIndex:row]];
-    
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:benefitDetailViewController animated:YES];
+    // Pass the selected object to the new view controller.    
+    benefitDetailViewController.benefit = [benefitsArray objectAtIndex:row];
+
+    [self.navigationController pushViewController:benefitDetailViewController animated:YES];
     
 }
 

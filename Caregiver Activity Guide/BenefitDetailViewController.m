@@ -10,7 +10,7 @@
 #import "Caregiver_Activity_GuideAppDelegate.h"
 
 @implementation BenefitDetailViewController
-@synthesize benefitDescriptionTextView;
+@synthesize benefitDescriptionTextView, benefit;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,38 +30,17 @@
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad
+- (void)viewWillAppear:(BOOL)animaated
 {
-    // Do any additional setup after loading the view from its nib.
+    // Set the title and the text from the selected object
+    self.title = [NSString stringWithFormat:@"%@", [self.benefit valueForKey:@"title"]];
+    [self.benefitDescriptionTextView setText:[NSString stringWithFormat:@"%@", [self.benefit valueForKey:@"desc"]]];
     
-    // Get the objects from Core Data database
-    Caregiver_Activity_GuideAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context = [appDelegate managedObjectContext];
-    NSEntityDescription *entityDescription = [NSEntityDescription
-											  entityForName:@"Benefit"
-											  inManagedObjectContext:context];
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    [request setEntity:entityDescription];
-    
-    NSPredicate *pred = [NSPredicate predicateWithFormat:@"(title = %@)", self.title];
-    [request setPredicate:pred];
-	
-    NSError *error;
-    NSArray *objects = [context executeFetchRequest:request error:&error];
-    if (objects == nil) {
-        NSLog(@"There was an error!");
-        // Do whatever error handling is appropriate
-    }
-    
-    for (NSManagedObject *oneObject in objects) {
-        [benefitDescriptionTextView setText:[oneObject valueForKey:@"desc"]];
-    }
-    
-    [request release];
-    
-    //[benefitDescriptionTextView setText:@"This is a test!"];
-    
-    [super viewDidLoad];    
+    [super viewWillAppear:YES];    
+}
+
+- (void)viewDidLoad{
+    [super viewDidLoad];
 }
 
 - (void)viewDidUnload
@@ -69,6 +48,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    self.benefit = nil;
     self.benefitDescriptionTextView = nil;
 }
 
@@ -80,6 +60,7 @@
 
 - (void)dealloc{
     [benefitDescriptionTextView release];
+    [benefit release];
     [super dealloc];
 }
 

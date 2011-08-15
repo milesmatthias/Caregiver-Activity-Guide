@@ -38,6 +38,10 @@
 		B9515FFD13E5AAD000ECC6FB /* BenefitsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9515FFB13E5AAD000ECC6FB /* BenefitsTableViewController.xib */; };
 		B951600513E5BA7500ECC6FB /* BenefitDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B951600313E5BA7500ECC6FB /* BenefitDetailViewController.m */; };
 		B951600613E5BA7500ECC6FB /* BenefitDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B951600413E5BA7500ECC6FB /* BenefitDetailViewController.xib */; };
+		B9668C4913F8A1B900CCBCB1 /* 12-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = B9668C4813F8A1B800CCBCB1 /* 12-eye.png */; };
+		B9668C4C13F8A2A400CCBCB1 /* 102-walk.png in Resources */ = {isa = PBXBuildFile; fileRef = B9668C4B13F8A2A400CCBCB1 /* 102-walk.png */; };
+		B9668C5313F8B69300CCBCB1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B9668C5113F8B69200CCBCB1 /* Default.png */; };
+		B9668C5413F8B69300CCBCB1 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B9668C5213F8B69200CCBCB1 /* icon.png */; };
 		B9E13A3C13EB6C5E006C8B0C /* SkillsNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E13A3A13EB6C5E006C8B0C /* SkillsNavController.m */; };
 		B9E13A3D13EB6C5E006C8B0C /* SkillsNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9E13A3B13EB6C5E006C8B0C /* SkillsNavController.xib */; };
 		B9E13A4113EB6C83006C8B0C /* SkillsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E13A3F13EB6C83006C8B0C /* SkillsTableViewController.m */; };
@@ -99,6 +103,10 @@
 		B951600213E5BA7500ECC6FB /* BenefitDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BenefitDetailViewController.h; sourceTree = "<group>"; };
 		B951600313E5BA7500ECC6FB /* BenefitDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BenefitDetailViewController.m; sourceTree = "<group>"; };
 		B951600413E5BA7500ECC6FB /* BenefitDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitDetailViewController.xib; sourceTree = "<group>"; };
+		B9668C4813F8A1B800CCBCB1 /* 12-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "12-eye.png"; path = "../../../iOS/glyphish-icons/icons/12-eye.png"; sourceTree = "<group>"; };
+		B9668C4B13F8A2A400CCBCB1 /* 102-walk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "102-walk.png"; path = "../../../iOS/glyphish-icons/icons/102-walk.png"; sourceTree = "<group>"; };
+		B9668C5113F8B69200CCBCB1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Caregiver Activity Guide/Default.png"; sourceTree = "<group>"; };
+		B9668C5213F8B69200CCBCB1 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = "Caregiver Activity Guide/icon.png"; sourceTree = "<group>"; };
 		B9E13A3913EB6C5E006C8B0C /* SkillsNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsNavController.h; sourceTree = "<group>"; };
 		B9E13A3A13EB6C5E006C8B0C /* SkillsNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsNavController.m; sourceTree = "<group>"; };
 		B9E13A3B13EB6C5E006C8B0C /* SkillsNavController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillsNavController.xib; sourceTree = "<group>"; };
@@ -172,6 +180,8 @@
 		B937E5DA13E5A29B0037462C = {
 			isa = PBXGroup;
 			children = (
+				B9668C5113F8B69200CCBCB1 /* Default.png */,
+				B9668C5213F8B69200CCBCB1 /* icon.png */,
 				B937E5EF13E5A29C0037462C /* Caregiver Activity Guide */,
 				B937E60B13E5A29C0037462C /* Caregiver Activity GuideTests */,
 				B937E5E813E5A29C0037462C /* Frameworks */,
@@ -219,6 +229,8 @@
 		B937E5F013E5A29C0037462C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B9668C4B13F8A2A400CCBCB1 /* 102-walk.png */,
+				B9668C4813F8A1B800CCBCB1 /* 12-eye.png */,
 				B93CF25A13F48F3D004227FA /* Caregiver_Activity_Guide.sqlite */,
 				B937E61D13E5A5260037462C /* 16-line-chart.png */,
 				B937E5F113E5A29C0037462C /* Caregiver Activity Guide-Info.plist */,
@@ -359,6 +371,10 @@
 				B909E87B13F4A2AA006F0698 /* BrowseDetailViewController.xib in Resources */,
 				B909E87D13F4A2AA006F0698 /* BrowseNavController.xib in Resources */,
 				B909E87F13F4A2AA006F0698 /* BrowseTableViewController.xib in Resources */,
+				B9668C4913F8A1B900CCBCB1 /* 12-eye.png in Resources */,
+				B9668C4C13F8A2A400CCBCB1 /* 102-walk.png in Resources */,
+				B9668C5313F8B69300CCBCB1 /* Default.png in Resources */,
+				B9668C5413F8B69300CCBCB1 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

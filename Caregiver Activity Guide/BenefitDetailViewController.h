@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface BenefitDetailViewController : UIViewController{
+    NSObject *benefit;
     UITextView *benefitDescriptionTextView;
 }
+@property (nonatomic, retain) NSObject *benefit;
 @property (nonatomic, retain) IBOutlet UITextView *benefitDescriptionTextView;
 
 @end

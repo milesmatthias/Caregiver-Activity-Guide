@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="851" systemVersion="11A511" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Activity">
+        <attribute name="adaptions" optional="YES" attributeType="String"/>
+        <attribute name="behaviorRules" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="favorite" optional="YES" attributeType="Boolean"/>
+        <attribute name="instructions" optional="YES" attributeType="String"/>
+        <attribute name="makeClientCentered" optional="YES" attributeType="String"/>
+        <attribute name="picture" optional="YES" attributeType="String"/>
+        <attribute name="precautions" optional="YES" attributeType="String"/>
+        <attribute name="resources" optional="YES" attributeType="String"/>
+        <attribute name="skillsToImprove" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="Benefit">
         <attribute name="desc" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
@@ -9,7 +22,8 @@
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Benefit" positionX="160" positionY="192" width="128" height="75"/>
-        <element name="Definition" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Benefit" positionX="7" positionY="-282" width="128" height="75"/>
+        <element name="Definition" positionX="-306" positionY="-288" width="128" height="75"/>
+        <element name="Activity" positionX="-153" positionY="-270" width="128" height="210"/>
     </elements>
 </model>
